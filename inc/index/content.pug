@@ -1,40 +1,41 @@
-section.main_news-catalog
-    .container
-        .row
-            .col-12.col-sm-12.col-md-4.col-xl-3
-                section.news_list
-                    .row
-                        -for(var i=1;i<=3;i++)
-                            .col-12
-                                article.type_news
-                                    a.thumbnail_link(href="#")
-                                        span.thumbnail(style="background-image:url(img/news1.jpg)")
-                                    a.news_title(href="") Решение по реализации помарочного учета алкогольной продукции.
-                                    .date 22 июля 2018
+main
+    section.main_news-catalog
+        .container
+            .row
+                .col-12.col-sm-12.col-md-4.col-xl-3
+                    section.news_list
+                        .row
+                            -for(var i=1;i<=3;i++)
+                                .col-12
+                                    article.type_news
+                                        a.thumbnail_link(href="#")
+                                            span.thumbnail(style="background-image:url(img/news1.jpg)")
+                                        a.news_title(href="") Решение по реализации помарочного учета алкогольной продукции.
+                                        .date 22 июля 2018
 
-            .col-12.col-sm-12.col-md-8.col-xl-9
-                .row.brands_list
-                    -for(var ii=0;ii<=8;ii++)
-                        a.col-12.col-sm-6.col-md-6.col-xl-4.brand_item(href="#")
-                            img(src="img/brands/"+ii+".png")
+                .col-12.col-sm-12.col-md-8.col-xl-9
+                    .row.brands_list
+                        -for(var ii=0;ii<=8;ii++)
+                            a.col-12.col-sm-6.col-md-6.col-xl-4.brand_item(href="#")
+                                img(src="img/brands/"+ii+".png")
 
-section.section.communities
-    .container
-        p.title Сообщества
-        .row.communities_list
-            -for(var g=1;g<=3;g++)
-                .col-12.col-sm-12.col-md-4.col-xl-4
-                    a.item(href="#" style="background-image:url(img/news1.jpg)")
+    section.section.communities
+        .container
+            p.title Сообщества
+            .row.communities_list
+                -for(var g=1;g<=3;g++)
+                    .col-12.col-sm-12.col-md-4.col-xl-4
+                        a.item(href="#" style="background-image:url(img/news1.jpg)")
 
-section.section.about
-    .container
-        p.title О компании
-        .row.about_desc
-            .col-12.col-sm-12.col-md-5.col-xl-5
-                p.quotes IDRINK - импортер в Республику Беларусь известных мировых алкогольных брендов
-            .col-12.col-sm-12.col-md-7.col-xl-7.right_col
-                p Будущее нашего бизнеса в развитии иновационной мысли в сферах промышленных технологий. За время своего существования наша компания собрала отличную команду талантливых и трудолюбивых специалистов, благодаря которым продукция соответствует самым высоким требованиям.
-                blockquote Будущее нашего бизнеса в развитии иновационной мысли в сферах промышленных технологий
+    section.section.about
+        .container
+            p.title О компании
+            .row.about_desc
+                .col-12.col-sm-12.col-md-5.col-xl-5
+                    p.quotes IDRINK - импортер в Республику Беларусь известных мировых алкогольных брендов
+                .col-12.col-sm-12.col-md-7.col-xl-7.right_col
+                    p Будущее нашего бизнеса в развитии иновационной мысли в сферах промышленных технологий. За время своего существования наша компания собрала отличную команду талантливых и трудолюбивых специалистов, благодаря которым продукция соответствует самым высоким требованиям.
+                    blockquote Будущее нашего бизнеса в развитии иновационной мысли в сферах промышленных технологий
 
 
 

@@ -1,83 +1,84 @@
-section.section_content
-    .container
-        ul.breadcrumb
-            li.breadcrumb-item
-                a(href="#") Главная
-            li.breadcrumb-item
-                a(href="#content") #{page.title}
+main
+    section.section_content
+        .container
+            ul.breadcrumb
+                li.breadcrumb-item
+                    a(href="#") Главная
+                li.breadcrumb-item
+                    a(href="#content") #{page.title}
 
-        h1 ДОБРЫЙ ДЕНЬ, ЧП “МИР”!
-        .last_news
-            span.sub_title Последняя новость
-            span.sep
-            span.news_title Начал работу личный кабинет юридического лица. Подробности по работе с личным  кабинетом можно узнать <a href="#">тут.</a>
+            h1 ДОБРЫЙ ДЕНЬ, ЧП “МИР”!
+            .last_news
+                span.sub_title Последняя новость
+                span.sep
+                span.news_title Начал работу личный кабинет юридического лица. Подробности по работе с личным  кабинетом можно узнать <a href="#">тут.</a>
 
-        .account_content
-            .b_bottom.row_1
-                .row
-                    .col-12
-                        .c_title Прайс-лист
-                    .col-12.col-sm-12.col-md-7.col-xl-7
-                        .text_grey Чтобы получить прайс-лист, отправьте запрос менеджеру.<br> Прайс-лист будет выслан Вам на почту.
-                    .col-12.col-sm-12.col-md-5.col-xl-5.text-center
-                        a.btn_default(href="#") ЗАПРОСИТЬ ПРАЙС-ЛИСТ
+            .account_content
+                .b_bottom.row_1
+                    .row
+                        .col-12
+                            .c_title Прайс-лист
+                        .col-12.col-sm-12.col-md-7.col-xl-7
+                            .text_grey Чтобы получить прайс-лист, отправьте запрос менеджеру.<br> Прайс-лист будет выслан Вам на почту.
+                        .col-12.col-sm-12.col-md-5.col-xl-5.text-center
+                            a.btn_default(href="#") ЗАПРОСИТЬ ПРАЙС-ЛИСТ
 
-            .b_bottom.contact_row
-                .row
-                    .col-12.col-sm-12.col-md-12.col-xl-4
-                        .c_title ВАШ МЕНЕДЖЕР
-                    .col-12.col-sm-12.col-md-4.col-xl-2
-                        .c_info <span>Имя</span> Александр
-                    .col-12.col-sm-12.col-md-4.col-xl-3
-                        .c_info <span>Телефон</span> +375 (17) 123-45-96
-                    .col-12.col-sm-12.col-md-4.col-xl-3
-                        .c_info <span>Email</span> <a href="mailto:alex@idrink.by">alex@idrink.by</a>
+                .b_bottom.contact_row
+                    .row
+                        .col-12.col-sm-12.col-md-12.col-xl-4
+                            .c_title ВАШ МЕНЕДЖЕР
+                        .col-12.col-sm-12.col-md-4.col-xl-2
+                            .c_info <span>Имя</span> Александр
+                        .col-12.col-sm-12.col-md-4.col-xl-3
+                            .c_info <span>Телефон</span> +375 (17) 123-45-96
+                        .col-12.col-sm-12.col-md-4.col-xl-3
+                            .c_info <span>Email</span> <a href="mailto:alex@idrink.by">alex@idrink.by</a>
 
-            .b_bottom.contact_form_row
-                .c_title Отправить заявку на уточнение стоимости
-                .acc_form
-                    p.form_sub_title Укажите, пожалуйста, товары, для которых необходимо уточнить стоимтость:
-                    form.form
-                        .row
-                            .col-12
-                                .row
-                                    .col-12.col-sm-12.col-md-6.col-xl-3.field
-                                        label Тип продукции
-                                        select.js-example-basic-single.form-control
-                                            option Выбрать
-                                            option Тип продукции 1
-                                            option Тип продукции 2
-                                            option Тип продукции 3
+                .b_bottom.contact_form_row
+                    .c_title Отправить заявку на уточнение стоимости
+                    .acc_form
+                        p.form_sub_title Укажите, пожалуйста, товары, для которых необходимо уточнить стоимтость:
+                        form.form
+                            .row
+                                .col-12
+                                    .row
+                                        .col-12.col-sm-12.col-md-6.col-xl-3.field
+                                            label Тип продукции
+                                            select.js-example-basic-single.form-control
+                                                option Выбрать
+                                                option Тип продукции 1
+                                                option Тип продукции 2
+                                                option Тип продукции 3
 
-                                    .col-12.col-sm-12.col-md-6.col-xl-3.field
-                                        label Бренд
-                                        select.js-example-basic-single.form-control
-                                            option Выбрать
-                                            option Бренд 1
-                                            option Бренд 2
-                                            option Бренд 3
-                                    .col-12.col-sm-12.col-md-6.col-xl-3.field
-                                        label Объём
-                                        select.js-example-basic-single.form-control
-                                            option Выбрать
-                                            option Объём 1
-                                            option Объём 2
-                                            option Объём 3
-                                    .col-12.col-sm-12.col-md-6.col-xl-3.field.amount_block
-                                        label Количество
-                                        .amount
-                                            span.down -
-                                            input.form-control(type="text" value="1")
-                                            span.up +
+                                        .col-12.col-sm-12.col-md-6.col-xl-3.field
+                                            label Бренд
+                                            select.js-example-basic-single.form-control
+                                                option Выбрать
+                                                option Бренд 1
+                                                option Бренд 2
+                                                option Бренд 3
+                                        .col-12.col-sm-12.col-md-6.col-xl-3.field
+                                            label Объём
+                                            select.js-example-basic-single.form-control
+                                                option Выбрать
+                                                option Объём 1
+                                                option Объём 2
+                                                option Объём 3
+                                        .col-12.col-sm-12.col-md-6.col-xl-3.field.amount_block
+                                            label Количество
+                                            .amount
+                                                span.down -
+                                                input.form-control(type="text" value="1")
+                                                span.up +
 
-                            .col-12.col-sm-6.col-md-6.col-xl-3.field
-                                buttom.add_line#add Добавить строку
+                                .col-12.col-sm-6.col-md-6.col-xl-3.field
+                                    buttom.add_line#add Добавить строку
 
-                            .col-12.field
-                                label Комментарий
-                                textarea.form-control(placeholder="Добавить комментарий")
-                            .col-12.btn_field
-                                button.btn_default(type="submit") Отправить
+                                .col-12.field
+                                    label Комментарий
+                                    textarea.form-control(placeholder="Добавить комментарий")
+                                .col-12.btn_field
+                                    button.btn_default(type="submit") Отправить
 
 
 
