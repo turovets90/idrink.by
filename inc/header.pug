@@ -49,9 +49,7 @@ header
                 .user_container
                     ul.user_nav
                         li
-                            if page.title == "Главная1"
-                                a.btn_default(href="#") Войти
-                            else
+                            if page.title == "Личный кабинет"
                                 a.btn_default.my_account(href="#" id="my_account" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Мой кабинет
                                     i.arrow
                                 .dropdown-menu#my_account_dropdown(aria-labelledby="my_account")
@@ -60,6 +58,9 @@ header
                                             a(href="#") Войти
                                         li
                                             a.go_out(href="#") Выйти
+                            else
+                                a.btn_default(href="#") Войти
+
             .col-6.col-sm-1.col-md-1.d-block.d-xl-none
                 .mobile_btn
                     button.hamburger
