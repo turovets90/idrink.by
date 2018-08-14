@@ -1,0 +1,138 @@
+-var main_menu =['Новости','Корпоративным клиентам','Мероприятия ','Блог','О нас' ,'Контакты'];
+-var mobile_menu =['Главная','Каталог','Новости','Корпоративным клиентам','Мероприятия ','Блог','О нас' ,'Контакты'];
+
+.mobile_menu
+    .logo_block
+        a(href="/")
+            img(src="img/logo.png")
+    nav
+        ul.nav
+            for m_menu_item,index in mobile_menu
+                if index == 0
+                    li.active
+                        a(href="" + m_menu_item + '.html')=m_menu_item
+                else
+                    li
+                        a(href="" + m_menu_item + '.html')=m_menu_item
+    .search_form_container
+        .search_form_block
+            form.form.search_form
+                input.form-control(type="text" placeholder="Поиск по сайту")
+                button.search_btn(type="submit")
+    .user_container
+        if page.title == "Главная"
+            ul.user_nav
+                li
+                    a.btn_default(href="#") Войти
+        else
+            ul.user_nav.flex
+                li
+                    a.btn_default(href="#") Войти
+                li
+                    a.go_out(href="#") Выйти
+
+header
+    .container
+        .row.h_row_1
+            .col-6.col-sm-2.col-md-2.col-xl-3
+                .logo_block
+                    a(href="/")
+                        img(src="img/logo.png")
+            .col-6.col-sm-6.col-md-6.col-xl-7.d-none.d-sm-block
+                .search_form_container
+                    .search_form_block
+                        form.form.search_form
+                            input.form-control(type="text" placeholder="Поиск по сайту")
+                            button.search_btn(type="submit")
+
+            .col-6.col-sm-3.col-md-3.col-xl-2.d_none_720
+                .user_container
+                    ul.user_nav
+                        li
+                            if page.title == "Главная1"
+                                a.btn_default(href="#") Войти
+                            else
+                                a.btn_default.my_account(href="#" id="my_account" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Мой кабинет
+                                    i.arrow
+                                .dropdown-menu#my_account_dropdown(aria-labelledby="my_account")
+                                    ul
+                                        li
+                                            a(href="#") Войти
+                                        li
+                                            a.go_out(href="#") Выйти
+            .col-6.col-sm-1.col-md-1.d-block.d-xl-none
+                .mobile_btn
+                    button.hamburger
+                        span
+                        span
+                        span
+
+
+        .row.h_row_2
+            .col-6.col-sm-6.col-md-3.col-xl-3.d-none.d-xl-block
+                .catalog_btn_container
+                    .catalog_btn Каталог
+                        i.before
+                        i.after
+            .col-6.col-sm-6.col-md-9.col-xl-9
+                .main_menu
+                    ul.nav
+                        for menu_item,index in main_menu
+                            if index == 0
+                                li.active
+                                    a(href="" + menu_item + '.html')=menu_item
+                            else
+                                li
+                                    a(href="" + menu_item + '.html')=menu_item
+
+
+-var cat_menu = ['Шампанское','Коньяк','Водка','Виски','Ликеры','Джины','Ром','Текила','Вина','Вода питьевая','Безалкогольные напитки'];
+-var cat_menu1 = ['Шампанское','Коньяк','Водка','Виски','Ликеры','Джины','Ром','Текила','Вина','Вода питьевая','Безалкогольные напитки'];
+.container.position-relative
+    if page.title == "Каталог"
+        nav.catalog_nav
+            ul
+                for menu_item1,index in cat_menu
+                    if index == 2
+                        li.active
+                            a(href="" + menu_item1 + '.html')=menu_item1
+                    else
+                        li
+                            a(href="" + menu_item1 + '.html')=menu_item1
+            ul
+                for menu_item2,index in cat_menu1
+                    if index == 5
+                        li.active
+                            a(href="" + menu_item2 + '.html')=menu_item2
+                    else
+                        li
+                            a(href="" + menu_item2 + '.html')=menu_item2
+    else
+        nav.catalog_nav.d_none
+            ul
+                for menu_item1,index in cat_menu
+                    if index == 2
+                        li.active
+                            a(href="" + menu_item1 + '.html')=menu_item1
+                    else
+                        li
+                            a(href="" + menu_item1 + '.html')=menu_item1
+            ul
+                for menu_item2,index in cat_menu1
+                    if index == 5
+                        li.active
+                            a(href="" + menu_item2 + '.html')=menu_item2
+                    else
+                        li
+                            a(href="" + menu_item2 + '.html')=menu_item2
+
+
+
+
+
+
+
+
+
+
+
