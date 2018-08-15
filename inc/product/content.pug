@@ -1,0 +1,105 @@
+main
+    section.section_content
+        .container
+            ul.breadcrumb
+                li.breadcrumb-item
+                    a(href="#") Главная
+                li.breadcrumb-item
+                    a(href="#") Каталог
+                li.breadcrumb-item
+                    a(href="#") Коньяк
+                li.breadcrumb-item
+                    a(href="#content") Хеннеси
+            h1 Hennessy
+            .product_content
+                .product_row
+                    .row
+                        .col-12.col-sm-12.col-md-6.col-xl-4
+                            .product_img
+                                a(data-fancybox="product" href="img/product.png")
+                                    img(src="img/product.png")
+                        .col-12.col-sm-12.col-md-6.col-xl-4
+                            .characteristics_block
+                                h2.title Коньяк французский «Hennessy VS»
+                                .char_block
+                                    table.props_list
+                                        tbody
+                                            tr
+                                                td.char_name
+                                                    .props_item
+                                                        span Тип:
+                                                td.char_value
+                                                    span Коньяк
+                                            tr
+                                                td.char_name
+                                                    .props_item
+                                                        span Крепость:
+                                                td.char_value
+                                                    span 40%
+                                            tr
+                                                td.char_name
+                                                    .props_item
+                                                        span Класс:
+                                                td.char_value
+                                                    span VS
+                                            tr
+                                                td.char_name
+                                                    .props_item
+                                                        span Выдержка:
+                                                td.char_value
+                                                    span 2 года
+                                            tr
+                                                td.char_name
+                                                    .props_item
+                                                        span Бренд:
+                                                td.char_value
+                                                    span Hennessy
+                        .col-12.col-sm-12.col-md-12.col-xl-4
+                            .about_liters
+                                .head Информация о литраже
+                                .body
+                                    ul
+                                        li 0.5 л
+                                        li 0.7 л
+                                        li 1 л
+                                        li 3 л
+
+
+                .content
+                    h2 Описание
+                    p <strong>Цвет:</strong><br> Коньяк цвета пламенной охры.
+                    p <strong>Аромат:</strong><br> Обладает волнующим ароматом с преобладающими нотами ванили и дуба, легким нюансом ягод, за которыми следуют нежные оттенки лесного ореха и цветов.
+                    p <strong>Вкус:</strong><br> Имеет многогранный вкус с богатой, объемной текстурой и богатым букетом различных оттенков вкуса, в обрамлении которого присутствуют ноты ранних фруктов, оттененные легкой свежестью.
+                    p Hennessy V.S (Very Special) является самым продаваемым коньяком в мире, а также прямым потомком первого коньяка, который был выпущен около 200 лет назад. В его составе — ассамбляж из коньячных спиртов родом из лучших винодельческих районов региона Коньяк, число спиртов превышает 40. Hennessy V.S является эталоном среди коньяков. История его создания восходит к 1865 году, когда правнук основателя дома — Морис Хеннесси решил ввести для обозначения выдержки своих коньяков символ в виде звезды. При этом по легенде на выбор данного символа Хеннесси вдохновила звездочка на оконной ручке в его кабинете. Так появился коньяк с символом из 3-х звезд, который впоследствии стал носить название V.S.
+    section.section
+        .container
+            .row
+                .col-12.col-sm-12.col-md-8.col-xl-8
+                    p.title Новости бренда
+                .col-12.col-sm-12.col-md-4.col-xl-4.show_all_block
+                    a.show_all(href="") Все новости
+            .row.news_list
+                -for(var i=0;i<=3;i++)
+                    .col-12.col-sm-6.col-md-4.col-xl-3
+                        article.type_news
+                            a.thumbnail_link(href="#")
+                                span.thumbnail(style="background-image:url(img/news1.jpg)")
+                            a.news_title(href="") Решение по реализации помарочного учета алкогольной продукции.
+                            .date 22 июля 2018
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
