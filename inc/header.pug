@@ -89,43 +89,44 @@ header
 
 -var cat_menu = ['Шампанское','Коньяк','Водка','Виски','Ликеры','Джины','Ром','Текила','Вина','Вода питьевая','Безалкогольные напитки'];
 -var cat_menu1 = ['Шампанское','Коньяк','Водка','Виски','Ликеры','Джины','Ром','Текила','Вина','Вода питьевая','Безалкогольные напитки'];
-.container.position-relative
-    if page.title == "Каталог"
-        nav.catalog_nav
-            ul
-                for menu_item1,index in cat_menu
-                    if index == 2
-                        li.active
-                            a(href="" + menu_item1 + '.html')=menu_item1
-                    else
-                        li
-                            a(href="" + menu_item1 + '.html')=menu_item1
-            ul
-                for menu_item2,index in cat_menu1
-                    if index == 5
-                        li.active
-                            a(href="" + menu_item2 + '.html')=menu_item2
-                    else
-                        li
-                            a(href="" + menu_item2 + '.html')=menu_item2
-    else
-        nav.catalog_nav.d_none
-            ul
-                for menu_item1,index in cat_menu
-                    if index == 2
-                        li.active
-                            a(href="" + menu_item1 + '.html')=menu_item1
-                    else
-                        li
-                            a(href="" + menu_item1 + '.html')=menu_item1
-            ul
-                for menu_item2,index in cat_menu1
-                    if index == 5
-                        li.active
-                            a(href="" + menu_item2 + '.html')=menu_item2
-                    else
-                        li
-                            a(href="" + menu_item2 + '.html')=menu_item2
+section.section_catalog_nav.p-0
+    .container.position-relative
+        if page.title == "Каталог"
+            nav.catalog_nav
+                ul
+                    for menu_item1,index in cat_menu
+                        if index == 2
+                            li.active
+                                a(href="" + menu_item1 + '.html')=menu_item1
+                        else
+                            li
+                                a(href="" + menu_item1 + '.html')=menu_item1
+                ul
+                    for menu_item2,index in cat_menu1
+                        if index == 5
+                            li.active
+                                a(href="" + menu_item2 + '.html')=menu_item2
+                        else
+                            li
+                                a(href="" + menu_item2 + '.html')=menu_item2
+        else
+            nav.catalog_nav.d_none
+                ul
+                    for menu_item1,index in cat_menu
+                        if index == 2
+                            li.active
+                                a(href="" + menu_item1 + '.html')=menu_item1
+                        else
+                            li
+                                a(href="" + menu_item1 + '.html')=menu_item1
+                ul
+                    for menu_item2,index in cat_menu1
+                        if index == 5
+                            li.active
+                                a(href="" + menu_item2 + '.html')=menu_item2
+                        else
+                            li
+                                a(href="" + menu_item2 + '.html')=menu_item2
 
 
 

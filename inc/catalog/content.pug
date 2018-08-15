@@ -1,0 +1,58 @@
+main
+    section.section_content
+        .container
+            ul.breadcrumb
+                li.breadcrumb-item
+                    a(href="#") Главная
+                li.breadcrumb-item
+                    a(href="#") #{page.title}
+                li.breadcrumb-item
+                    a(href="#content") Водка
+            h1 Водка
+            .row.brands_list
+                -for(var ii=0;ii<=11;ii++)
+                    a.col-12.col-sm-6.col-md-4.col-xl-3.brand_item(href="#")
+                        img(src="img/brands/" + ii + ".png")
+            .pagination_block
+                nav
+                    .page-item
+                        a(href="#" class="page-link" aria-label="Previous")
+                            span(aria-hidden="true") Предыдущая
+                    ul.pagination
+                        li.page-item
+                            a(href="#" class="page-link active") 1
+                        li.page-item
+                            a(href="#" class="page-link") 2
+                        li.page-item
+                            a(href="#" class="page-link") 3
+                        li.page-item
+                            a(href="#" class="page-link") 4
+                    .page-item
+                        a(href="#" class="page-link active" aria-label="Next")
+                            span(aria-hidden="true") Следующая
+
+    section.section
+        .container
+            .content.p-0.mt-0
+                .row
+                    .col-12.col-sm-12.col-md-12.col-xl-6
+                        p.title ВодкА и алкогольные напитки из злаковых
+                .row
+                    .col-12.col-sm-12.col-md-6.col-xl-6
+                        p Будущее нашего бизнеса в развитии иновационной мысли в сферах промышленных технологий. За время своего существования наша компания собрала отличную команду талантливых и трудолюбивых специалистов, благодаря которым продукция соответствует самым высоким требованиям.
+                    .col-12.col-sm-12.col-md-6.col-xl-6
+                        p Будущее нашего бизнеса в развитии иновационной мысли в сферах промышленных технологий. За время своего существования наша компания собрала отличную команду талантливых и трудолюбивых специалистов, благодаря которым продукция соответствует самым высоким требованиям.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
