@@ -1,0 +1,41 @@
+.container.pt-5.mt-5.pb-5.mb-5
+
+    button(data-toggle="modal" data-target="#feedback") ОБРАТНАЯ СВЯЗЬ
+    button(data-toggle="modal" data-target="#question") Вам исполнилось 18 лет?
+
+    .modal.fade#feedback(role="dialog" aria-labelledby="modalLabel" aria-hidden="true")
+        .modal-dialog.modal-lg
+            .modal-content
+                button.close(data-dismiss="modal" aria-label="Close")
+                .modal-body
+                    p.title ОБРАТНАЯ СВЯЗЬ
+                    form.modal_form
+                        .row
+                            .col-12.field
+                                label Имя
+                                input.form-control(type="text" placeholder="Ваше имя")
+                            .col-12.field
+                                label Фамилия
+                                input.form-control(type="text" placeholder="Ваше фамилия")
+                            .col-12.field
+                                label Контактный телефон
+                                input.form-control(type="text" placeholder="Ваш телефон")
+                            .col-12.field
+                                label Email
+                                input.form-control(type="text" placeholder="Ваш email")
+                            .col-12.btn_block
+                                .row
+                                    .col-12.col-sm-6
+                                        button.btn_default.clear(type="reset") Очистить
+                                    .col-12.col-sm-6
+                                        button.btn_default(type="submit") Отправить
+
+    .modal.fade#question(role="dialog" aria-labelledby="modalLabel" aria-hidden="true")
+        .modal-dialog.modal-lg
+            .modal-content
+                .question_modal_content
+                    .logo
+                        img(src="img/logo.png")
+
+                    .question_title Вам исполнилось 18 лет?
+                    button.btn_default Да
